@@ -4,9 +4,10 @@ use std::time::Duration;
 
 fn main() {
     let mut counter = 0;
+    let mut player = 1;
 
     loop {
-        println!("(21 Dares) Enter your number:");
+        println!("[PLAYER {player}] Enter your number:");
         let mut input = String::new();
 
         io::stdin()
@@ -25,13 +26,21 @@ fn main() {
 
         println!("Current number: {counter}");
 
-        if counter == 20 {
+        if counter >= 20 {
             print!("\x1B[2J\x1B[1;1H");
             println!("Current number: {counter}");
             thread::sleep(Duration::from_secs(1));
-            println!("You win!");
+            println!("PLAYER {player} has won! Congratulations!");
             thread::sleep(Duration::from_secs(4));
             break;
+        }
+
+        if player == 1 {
+            player = 2;
+            continue;
+        } else {
+            player = 1;
+            continue;
         }
     }
 }

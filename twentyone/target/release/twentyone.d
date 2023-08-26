@@ -1,1 +1,1 @@
-C:\Users\kisim\OneDrive\Desktop\twentyone\target\release\twentyone.exe: C:\Users\kisim\OneDrive\Desktop\twentyone\src\main.rs
+C:\Users\kisim\OneDrive\Desktop\git_repos\twentyone\twentyone\twentyone\target\release\twentyone.exe: C:\Users\kisim\OneDrive\Desktop\git_repos\twentyone\twentyone\twentyone\src\main.rs
