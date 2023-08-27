@@ -4,6 +4,7 @@ use std::time::Duration;
 
 fn main() {
     let mut counter = 0;
+    // Initialize players:
     let mut player = 1;
 
     loop {
